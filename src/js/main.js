@@ -19,11 +19,8 @@ myCanvas.style.height = "100vh";
 myCanvas.style.position = "fixed";
 myCanvas.style.inset = 0;
 myCanvas.style.zIndex = -10;
-
 const confettiBtn = document.getElementById("confettiBtn");
 document.body.append(myCanvas);
-console.log(confettiBtn);
-
 confettiBtn.addEventListener("click", () => {
   const myConfetti = confetti.create(myCanvas, {
     resize: true,

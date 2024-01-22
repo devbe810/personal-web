@@ -30,7 +30,7 @@
 
 @layer components {
   .brand {
-    @apply text-2xl font-bold bg-gradient-to-r from-violet-600 to-indigo-200 bg-clip-text text-transparent;
+    @apply text-2xl font-extrabold bg-gradient-to-r from-violet-600 to-indigo-200 bg-clip-text text-transparent transition duration-150 ease-out hover:ease-in cursor-pointer hover:scale-[1.03];
   }
 
   .card {
@@ -39,5 +39,9 @@
 
   .btn-appreciate {
     @apply text-white;
+  }
+
+  #dark-toggle:checked ~ label div.toogle-circle {
+    @apply translate-x-3;
   }
 }
