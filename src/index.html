@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>personal website bqz</title>
+    <link href="css/global.css" rel="stylesheet" />
+  </head>
+  <body class="bg-slate-900 h-screen justify-between flex flex-col">
+    <header class="flex justify-between items-center p-4">
+      <div class="brand">DEVSCALE</div>
+      <div class="items-center flex gap-6">
+        <a
+          class="border flex items-center text-sm py-2 px-6 rounded-full bg-violet-600 hover:bg-white text-white hover:text-black"
+          href="https://google.com"
+          target="_blank"
+          >About</a
+        >
+        <a
+          class="border flex items-center text-sm py-2 px-6 rounded-full bg-violet-600 hover:bg-white text-white hover:text-black"
+          href="https://google.com"
+        >
+          Contact</a
+        >
+      </div>
+    </header>
+    <main class="grid grid-cols-4 gap-8 max-w-4xl p-7 m-auto">
+      <div class="card">
+        <img
+          src="/potopp.jpg"
+          class="w-full h-auto object-cover scale-150 justify-center items-center overflow-hidden"
+        />
+      </div>
+      <div class="card col-span-3">
+        <div class="flex float-end items-center gap-2">
+          <a href="https://linkedin.com">
+            <img
+              src="/public/linked.png"
+              target="_blank"
+              width="40px"
+              height="40px"
+              class="bg-transparent rounded-md"
+          /></a>
+          <a href="https://x.com">
+            <img
+              src="/public/x-logo.svg"
+              target="_blank"
+              width="35px"
+              height="35px"
+              class="bg-transparent rounded-md"
+          /></a>
+          <a href="https://github.com">
+            <img
+              src="/public/github.png"
+              target="_blank"
+              width="40px"
+              height="40px"
+              class="bg-transparent rounded-md"
+          /></a>
+        </div>
+        <h2>Hei, I'm Bagus.</h2>
+        <div class="flex items-center gap-2">
+          <div class="text-white">Fullstack Developer</div>
+          <div class="w-3 h-3 rounded-full bg-emerald-400 animate-pulse"></div>
+        </div>
+        <span id="typedJs" class="text-3xl font-bold text-white"></span>
+        <p>
+          I'm interested in new thing related to technology and always prepared
+          to face the challenges of technological developments which always
+          present new things.
+        </p>
+      </div>
+      <div class="card col-span-2 flex justify-center">
+        <img
+          src="public/img1.png"
+          class="w-full h-auto object-cover hover:scale-125 transition duration-300 cursor-pointer"
+        />
+      </div>
+      <div class="card col-span-2 flex justify-center">
+        <img
+          src="public/img2.png"
+          class="w-full h-auto object-cover hover:scale-125 transition duration-300 cursor-pointer"
+        />
+      </div>
+
+      <div class="card col-span-4">
+        <h2 class="purpose">I'm constantly trying to improve myself</h2>
+        <span id="typedJs2" class="learning space-y-2 text-white"></span>
+        <p class="webdesign">
+          I also learned Tailwindcss via my open source repo. Apart from that, I
+          also continue to practice web design.
+        </p>
+        <button
+          id="confettiBtn"
+          class="bg-white hover:bg-violet-600 hover:text-white text-black float-end mt-[60px]"
+        >
+          Appreciate
+        </button>
+      </div>
+    </main>
+    <script type="module" src="js/main.js"></script>
+
+    <footer class="text-center text-white p-5">
+      Made With Love, Devscale Bootcamp &#x2764;&#xfe0f;
+    </footer>
+  </body>
+</html>

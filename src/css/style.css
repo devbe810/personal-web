@@ -1,0 +1,43 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  h1 {
+    @apply text-4xl font-bold text-white;
+  }
+
+  h2 {
+    @apply text-xl font-bold p-0 text-white;
+  }
+
+  p {
+    @apply text-white mt-3;
+  }
+
+  .purpose {
+    @apply text-lg;
+  }
+
+  .learning {
+    @apply text-3xl font-bold;
+  }
+
+  button {
+    @apply border rounded-full px-4 py-2;
+  }
+}
+
+@layer components {
+  .brand {
+    @apply text-2xl font-bold bg-gradient-to-r from-violet-600 to-indigo-200 bg-clip-text text-transparent;
+  }
+
+  .card {
+    @apply border border-slate-700 border rounded-2xl p-10 h-[280px] bg-gradient-to-r from-indigo-500;
+  }
+
+  .btn-appreciate {
+    @apply text-white;
+  }
+}
