@@ -5,56 +5,73 @@
     <link href="css/global.css" rel="stylesheet" />
   </head>
   <body class="bg-slate-900 h-screen justify-between flex flex-col">
-    <header class="flex justify-between items-center p-4">
+    <header class="flex justify-between items-center p-5">
       <div class="brand">DEVSCALE</div>
+      <!--Navbar Menu-->
       <div class="items-center flex gap-6">
         <a
-          class="border flex items-center text-sm py-2 px-6 rounded-full bg-violet-600 hover:bg-white text-white hover:text-black"
-          href="https://google.com"
-          target="_blank"
-          >About</a
-        >
-        <a
-          class="border flex items-center text-sm py-2 px-6 rounded-full bg-violet-600 hover:bg-white text-white hover:text-black"
-          href="https://google.com"
+          class="border flex items-center text-sm py-2 px-6 rounded-full bg-violet-600 hover:bg-white text-white hover:text-black bg-violet-600 shadow-lg shadow-blue-500/50"
+          href="https://instagram.com"
         >
           Contact</a
         >
+        <a
+          class="border flex items-center text-sm py-2 px-6 rounded-full bg-violet-600 hover:bg-white text-white hover:text-black bg-violet-600 shadow-lg shadow-blue-500/50"
+          href="https://github.com/devbe810/personal-web"
+          target="_blank"
+          >New Project</a
+        >
       </div>
     </header>
-    <main class="grid grid-cols-4 gap-8 max-w-4xl p-7 m-auto">
-      <div class="card">
+    <main class="grid grid-cols-4 gap-8 max-w-4xl m-auto">
+      <div
+        class="card p-0 overflow-hidden justify-center items-center relative"
+      >
         <img
-          src="/potopp.jpg"
-          class="w-full h-auto object-cover scale-150 justify-center items-center overflow-hidden"
+          src="/swap.jpg"
+          width="800px"
+          height="800px"
+          class="object-cover absolute h-[300px] hover:ease-in"
         />
       </div>
+      <!--Social Media Link-->
       <div class="card col-span-3">
         <div class="flex float-end items-center gap-2">
           <a href="https://linkedin.com">
             <img
               src="/public/linked.png"
               target="_blank"
-              width="40px"
-              height="40px"
-              class="bg-transparent rounded-md"
+              width="30px"
+              height="30px"
+              class="bg-transparent rounded-md hover:bg-black cursor-pointer bg-violet-600 shadow-lg shadow-blue-500/50"
           /></a>
           <a href="https://x.com">
             <img
               src="/public/x-logo.svg"
               target="_blank"
-              width="35px"
-              height="35px"
-              class="bg-transparent rounded-md"
+              width="25px"
+              height="25px"
+              class="bg-transparent rounded-md hover:bg-black cursor-pointer bg-violet-600 shadow-lg shadow-blue-500/50"
           /></a>
           <a href="https://github.com">
             <img
               src="/public/github.png"
               target="_blank"
-              width="40px"
-              height="40px"
-              class="bg-transparent rounded-md"
+              width="30px"
+              height="30px"
+              class="bg-transparent rounded-md hover:bg-black cursor-pointer bg-violet-600 shadow-lg shadow-blue-500/50"
           /></a>
+
+          <a href="https://instagram.com">
+            <img
+              src="/public/ig.png"
+              target="_blank"
+              width="25px"
+              height="25px"
+              class="bg-transparent rounded-md hover:bg-black cursor-pointer bg-violet-600 shadow-lg shadow-blue-500/50"
+          /></a>
+
+          <!--Opening-->
         </div>
         <h2>Hei, I'm Bagus.</h2>
         <div class="flex items-center gap-2">
@@ -68,16 +85,23 @@
           present new things.
         </p>
       </div>
-      <div class="card col-span-2 flex justify-center">
+      <div
+        class="card col-span-2 flex justify-center p-0 overflow-hidden relative"
+      >
         <img
           src="public/img1.png"
-          class="w-full h-auto object-cover hover:scale-125 transition duration-300 cursor-pointer"
+          width="800px"
+          height="800px"
+          h[-200px]
+          class="hover:ease-out transition duration-300 cursor-pointer"
         />
       </div>
-      <div class="card col-span-2 flex justify-center">
+      <div class="card col-span-2 flex justify-center p-0 overflow-hidden">
         <img
           src="public/img2.png"
-          class="w-full h-auto object-cover hover:scale-125 transition duration-300 cursor-pointer"
+          width="800px"
+          height="800px absolute -[200px]"
+          class="hover:ease-out transition duration-300 cursor-pointer"
         />
       </div>
 
@@ -85,19 +109,21 @@
         <h2 class="purpose">I'm constantly trying to improve myself</h2>
         <span id="typedJs2" class="learning space-y-2 text-white"></span>
         <p class="webdesign">
-          I also learned Tailwindcss via my open source repo. Apart from that, I
-          also continue to practice web design.
+          I'm currently learning Tailwindcss through devscale bootcamp. I also
+          continue to learn create websites that have good design.
         </p>
+
+        <!--confetti button-->
         <button
           id="confettiBtn"
-          class="bg-white hover:bg-violet-600 hover:text-white text-black float-end mt-[60px]"
+          class="bg-white hover:bg-violet-600 hover:text-white text-black float-end mt-[60px] bg-violet-600 shadow-lg shadow-blue-500/50"
         >
           Appreciate
         </button>
       </div>
     </main>
     <script type="module" src="js/main.js"></script>
-
+    <!--Footer-->
     <footer class="text-center text-white p-5">
       Made With Love, Devscale Bootcamp &#x2764;&#xfe0f;
     </footer>
