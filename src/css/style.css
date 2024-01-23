@@ -44,7 +44,4 @@
   .btn-appreciate {
     @apply text-white;
   }
-  .loadingjs {
-    @apply fixed z-10 flex h-full w-full items-center justify-center gap-1 overflow-auto bg-violet-600;
-  }
 }
