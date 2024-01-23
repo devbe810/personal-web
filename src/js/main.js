@@ -26,8 +26,7 @@ setInterval(() => {
   counter.innerText = count;
   count++;
 
-  if (count > 3)
-    location.replace("https://personal-web-assigment3-bagus.vercel.app/");
+  if (count > 1) location.replace("/index.html");
 }, 100);
 const myCanvas = document.createElement("canvas");
 myCanvas.style.width = "100vw";
