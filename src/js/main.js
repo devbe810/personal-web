@@ -13,6 +13,22 @@ const typed2 = new Typed("#typedJs2", {
   loop: true,
 });
 
+const typed3 = new Typed("#typedJs3", {
+  strings: ["Please Wait.."],
+  typeSpeed: 60,
+  loop: true,
+});
+
+const loadingjs = document.getElementById("loadingjs");
+let counter = document.querySelector("loadingjs");
+let count = 1;
+setInterval(() => {
+  counter.innerText = count;
+  count++;
+
+  if (count > 3)
+    location.replace("https://personal-web-assigment3-bagus.vercel.app/");
+}, 100);
 const myCanvas = document.createElement("canvas");
 myCanvas.style.width = "100vw";
 myCanvas.style.height = "100vh";

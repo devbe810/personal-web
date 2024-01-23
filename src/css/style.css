@@ -26,6 +26,10 @@
   button {
     @apply border rounded-full px-4 py-2;
   }
+
+  .loadingjs {
+    @apply text-3xl font-bold text-white;
+  }
 }
 
 @layer components {
@@ -40,8 +44,7 @@
   .btn-appreciate {
     @apply text-white;
   }
-
-  #dark-toggle:checked ~ label div.toogle-circle {
-    @apply translate-x-3;
+  .loadingjs {
+    @apply fixed z-10 flex h-full w-full items-center justify-center gap-1 overflow-auto bg-violet-600;
   }
 }
